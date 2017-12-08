@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {23CE38BC-F7B7-42B1-8B37-EAEA7AA94DA9} = s 'RDBSInterface Class'
+		{
+			ForceRemove Programmable
+			LocalServer32 = s '%MODULE%'
+			{
+				val ServerExecutable = s '%MODULE_RAW%'
+			}
+			TypeLib = s '{75D83472-D4C4-440D-826F-6705C78F3EE5}'
+			Version = s '1.0'
+		}
+	}
+}

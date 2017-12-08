@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17CCDDC9-A612-4374-B855-DBADE4D3EFCC}</ProjectGuid>
+    <Keyword>AtlProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Common;$(SolutionDir)\Component;$(SolutionDir)\OpenSource\boost\Include;$(SolutionDir)\OpenSource\websocketpp\Include;$(SolutionDir)\OpenSource\JsonCpp\Include;$(SolutionDir)\OpenSource\OTL;$(IncludePath)</IncludePath>
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\Tmp</IntDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <LibraryPath>$(SolutionDir)OpenSource\boost\SLib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Common;$(SolutionDir)\Component;$(SolutionDir)\OpenSource\boost\Include;$(SolutionDir)\OpenSource\websocketpp\Include;$(SolutionDir)\OpenSource\JsonCpp\Include;$(SolutionDir)\OpenSource\OTL;$(IncludePath)</IncludePath>
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\Tmp</IntDir>
+    <LibraryPath>$(SolutionDir)OpenSource\boost\SLib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>WebSocketServer_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>WebSocketServer_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>WebSocketServer_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)WebSocketServer.tlb</TypeLibraryName>
+      <DllDataFileName />
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RegisterOutput>false</RegisterOutput>
+      <PerUserRedirection>true</PerUserRedirection>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)\Tools\AutoVersion\AutoVersion.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>WebSocketServer_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>WebSocketServer_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>WebSocketServer_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)WebSocketServer.tlb</TypeLibraryName>
+      <DllDataFileName />
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>false</RegisterOutput>
+      <PerUserRedirection>true</PerUserRedirection>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)\Tools\AutoVersion\AutoVersion.exe</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\BasicInformation.cpp" />
+    <ClCompile Include="..\Common\CameraOperate.cpp" />
+    <ClCompile Include="..\Common\CameraScreenshot.cpp" />
+    <ClCompile Include="..\Common\CommonTool.cpp" />
+    <ClCompile Include="..\Common\CommonUnit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\Config\CameraConfig.cpp" />
+    <ClCompile Include="..\Common\Config\Config.cpp" />
+    <ClCompile Include="..\Common\Config\WSServerConfig.cpp" />
+    <ClCompile Include="..\Common\Console.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\AlarmAssistantTable.cpp" />
+    <ClCompile Include="..\Common\DatabaseManager\BMSInfoManager.cpp" />
+    <ClCompile Include="..\Common\DatabaseManager\ChangeShiftsTable.cpp" />
+    <ClCompile Include="..\Common\DatabaseManager\DatabaseManager.cpp" />
+    <ClCompile Include="..\Common\DatabaseManager\DatabaseReportForms.cpp" />
+    <ClCompile Include="..\Common\DatabaseManager\TableBase.cpp" />
+    <ClCompile Include="..\Common\DataCache.cpp" />
+    <ClCompile Include="..\Common\ForbidMultiProcess.cpp" />
+    <ClCompile Include="..\Common\Logger.cpp" />
+    <ClCompile Include="..\Common\NetPackage\AlarmAssistantPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\AlarmPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\BMSInfoPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\CameraControlPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\CheckStatusPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\ChgShiftsPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\EventPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\LinkagePackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\LoginPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\NetPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\PackageBase.cpp" />
+    <ClCompile Include="..\Common\NetPackage\TagPackage.cpp" />
+    <ClCompile Include="..\Common\NetPackage\TimetableDispatchPackage.cpp" />
+    <ClCompile Include="..\Common\Optimize.cpp" />
+    <ClCompile Include="..\Common\Parameter.cpp" />
+    <ClCompile Include="..\Common\PushDataCache.cpp" />
+    <ClCompile Include="..\Common\PushThread.cpp" />
+    <ClCompile Include="..\Common\Session.cpp" />
+    <ClCompile Include="..\Common\SessionManager.cpp" />
+    <ClCompile Include="..\Common\UnitConvert.cpp" />
+    <ClCompile Include="..\Common\WebSocketHandler.cpp" />
+    <ClCompile Include="..\Common\WSServerPipe.cpp" />
+    <ClCompile Include="..\Component\FileVersion\FileVersion.cpp" />
+    <ClCompile Include="..\OpenSource\JsonCpp\Src\jsoncpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RDBSInterface.cpp" />
+    <ClCompile Include="SocketHandler.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WebSocketServer.cpp" />
+    <ClCompile Include="WebSocketServer_i.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\BasicInformation.h" />
+    <ClInclude Include="..\Common\CameraOperate.h" />
+    <ClInclude Include="..\Common\CameraScreenshot.h" />
+    <ClInclude Include="..\Common\CommonTool.h" />
+    <ClInclude Include="..\Common\CommonUnit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\Config\CameraConfig.h" />
+    <ClInclude Include="..\Common\Config\Config.h" />
+    <ClInclude Include="..\Common\Config\WSServerConfig.h" />
+    <ClInclude Include="..\Common\Console.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\AlarmAssistantTable.h" />
+    <ClInclude Include="..\Common\DatabaseManager\BMSInfoManager.h" />
+    <ClInclude Include="..\Common\DatabaseManager\ChangeShiftsTable.h" />
+    <ClInclude Include="..\Common\DatabaseManager\DatabaseManager.h" />
+    <ClInclude Include="..\Common\DatabaseManager\DatabaseReportForms.h" />
+    <ClInclude Include="..\Common\DatabaseManager\TableBase.h" />
+    <ClInclude Include="..\Common\DataCache.h" />
+    <ClInclude Include="..\Common\Define.h" />
+    <ClInclude Include="..\Common\ForbidMultiProcess.h" />
+    <ClInclude Include="..\Common\Logger.h" />
+    <ClInclude Include="..\Common\NetPackage\AlarmAssistantPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\AlarmPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\BMSInfoPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\CameraControlPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\CheckStatusPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\ChgShiftsPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\EventPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\LinkagePackage.h" />
+    <ClInclude Include="..\Common\NetPackage\LoginPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\NetPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\PackageBase.h" />
+    <ClInclude Include="..\Common\NetPackage\TagPackage.h" />
+    <ClInclude Include="..\Common\NetPackage\TimetableDispatchPackage.h" />
+    <ClInclude Include="..\Common\Optimize.h" />
+    <ClInclude Include="..\Common\Parameter.h" />
+    <ClInclude Include="..\Common\PushDataCache.h" />
+    <ClInclude Include="..\Common\PushThread.h" />
+    <ClInclude Include="..\Common\Session.h" />
+    <ClInclude Include="..\Common\SessionManager.h" />
+    <ClInclude Include="..\Common\Singleton.h" />
+    <ClInclude Include="..\Common\UnitConvert.h" />
+    <ClInclude Include="..\Common\WebSocketHandler.h" />
+    <ClInclude Include="..\Common\WSServerPipe.h" />
+    <ClInclude Include="..\Component\Dump\MiniDump.h" />
+    <ClInclude Include="..\Component\FileVersion\FileVersion.h" />
+    <ClInclude Include="..\OpenSource\JsonCpp\Include\json\json-forwards.h" />
+    <ClInclude Include="..\OpenSource\JsonCpp\Include\json\json.h" />
+    <ClInclude Include="..\OpenSource\OTL\otlv4.h" />
+    <ClInclude Include="RDBSInterface.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WebSocketServer_i.h" />
+    <ClInclude Include="xdlldata.h" />
+    <ClInclude Include="_IRDBSInterfaceEvents_CP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WebSocketServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RDBSInterface.rgs" />
+    <None Include="WebSocketServer.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="WebSocketServer.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="WebSocketServer.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

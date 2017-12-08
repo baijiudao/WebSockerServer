@@ -1,0 +1,615 @@
+登录
+{
+"Command": 0,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Authority":0
+}
+
+
+退出登陆
+{
+  "Command": 1,
+  "StatusCode": 0,
+}
+
+供应商添加：
+{
+  "Command": 100,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+供应商删除：
+{
+  "Command": 101,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+供应商修改：
+{
+  "Command": 102,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询供应商：
+{
+  "Command": 103,
+  "Session_value": "A6B520ED"
+  "StatusCode": 0,
+  "Data":[
+	{
+     "SupplierCode":"123",
+     "SupplierName":"",
+     "ConPerson":"",
+     "ConDepartment":"",
+     "ConTelephone":"",
+     "Fax":"",
+     "Address":"",
+     "ZipCode":"",
+     "E-Mail":"",
+     "URL":"",
+     "Remarks":""
+    }
+  ]
+}
+
+增加计量表类型：
+{
+  "Command": 110,
+  "Session_value": "A6B520ED"
+  "StatusCode": 0
+}
+删除计量表类型：
+{
+  "Command": 111,
+  "Session_value": "A6B520ED"
+  "StatusCode": 0
+}
+修改计量表类型：
+{
+  "Command": 112,
+  "Session_value": "A6B520ED"
+  "StatusCode": 0
+}
+查询计量表类型：
+{
+  "Command": 113,
+  "Session_value": "A6B520ED"
+  "StatusCode": 0
+  "Data":[
+	{
+	"MeterType":"",
+	"TypeDes":""
+	}
+  ]
+}
+
+添加耗能类别：
+{
+  "Command": 120,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+删除耗能类别：
+{
+  "Command": 121,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+修改耗能类别：
+{
+  "Command": 122,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询耗能类别：
+{
+  "Command": 123,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"EnergyCate":"",
+	"TypeDes":""
+	}
+  ]
+}
+
+添加设备故障类别：
+{
+  "Command": 130,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+  ]
+}
+删除设备故障类别：
+{
+  "Command": 131,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+修改设备故障类别：
+{
+  "Command": 132,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询设备故障类别：
+{
+  "Command": 133,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"FaultCate":"",
+	"CategoryDes":"",
+	"FaultFeature":""
+	}
+  ]
+}
+
+增加设备档案：
+{
+  "Command": 140,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+删除设备档案：
+{
+  "Command": 141,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+修改设备档案：
+{
+  "Command": 142,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询设备档案：
+{
+  "Command": 143,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"MeterNumber":"",
+	"MeterType":"",
+	"EnergyCate":"",
+	"MeterModel":"",
+	"UseUnits":"",
+	"RateStandard":,
+	"StandardUnit":"",
+	"InstallDate":"",
+	"InstallLocation":"",
+	"ProductionFactory":"",
+	"MeterMagnification":,
+	"TranMeterBase":,
+	"MeterInitValue":,
+	"TranMeterValue":,
+	"Remarks":"",
+	"OldMeterNumber":""
+	}
+  ]
+}
+
+增加计量表档案：
+{
+  "Command": 150,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+删除计量表档案：
+{
+  "Command": 151,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+修改计量表档案：
+{
+  "Command": 152,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询计量表档案：
+{
+  "Command": 153,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"MeterNumber":"",
+	"MeterType":"",
+	"EnergyCate":"",
+	"MeterModel":"",
+	"UseUnits":"",
+	"RateStandard":,
+	"StandardUnit":"",
+	"InstallDate":"",
+	"InstallLocation":"",
+	"ProductionFactory":"",
+	"MeterMagnification":,
+	"TranMeterBase":,
+	"MeterInitValue":,
+	"TranMeterValue":,
+	"Remarks":"",
+	"ID": {
+			"SubsystemID": 1,
+			"DeviceID": 1,
+			"TagID": 2
+		},
+	"OldMeterNumber":""
+	
+	}
+  ]
+}
+
+增加设备参数：
+{
+  "Command": 160,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+删除设备参数:
+{
+  "Command": 161,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询设备参数:
+{
+  "Command": 162,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"TagID":"",
+	"TagName":""
+	}
+  ]
+}
+
+增加能源采集参数:
+{
+  "Command": 170,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+删除能源采集参数:
+{
+  "Command": 171,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询能源采集参数:
+{
+  "Command": 172,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "MeterNumber":"",
+  "TagID":""
+}
+
+增加设备维修记录:
+{
+  "Command": 180,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "recordingID":
+}
+删除设备维修记录:
+{
+  "Command": 181,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+修改设备维修记录:
+{
+  "Command": 182,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询设备维修记录:
+{
+  "Command": 183,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"recordingID":""
+	"DeviceName":"",
+	"RepairContent":"",
+	"RepairTime":"",
+	"FaultReason":"",
+	"RepairResults":"",
+	"RepairManager":"",
+	"RepairUnit":"",
+	"Remarks":""
+	}
+  ]
+}
+按设备查询维修记录:
+{
+  "Command": 184,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"recordingID":""
+	"DeviceName":"",
+	"RepairContent":"",
+	"RepairTime":"",
+	"FaultReason":"",
+	"RepairResults":"",
+	"RepairManager":"",
+	"RepairUnit":"",
+	"Remarks":""
+	}
+  ]
+}
+
+增加设备运行记录:
+{
+  "Command": 190,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "recordingID":
+}
+删除设备运行记录:
+{
+  "Command": 191,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+修改设备运行记录:
+{
+  "Command": 192,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0
+}
+查询设备运行记录:
+{
+  "Command": 193,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"recordingID":"",
+	"DeviceName":"",
+	"StartTime":"",
+	"EndTime":"",
+	"Operation":"",
+	"Recorder":"",
+	"Remarks":""
+	}
+  ]
+}
+按设备查询运行记录:
+{
+  "Command": 194,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"recordingID":"",
+	"DeviceName":"",
+	"StartTime":"",
+	"EndTime":"",
+	"Operation":"",
+	"Recorder":"",
+	"Remarks":""
+	}
+  ]
+}
+
+查询计量表读数:
+{
+  "Command": 200,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "PageNum":0,
+  "TotalPages":0,
+  "Data":[
+    {
+      "MeterNumber":"",
+	  "MeterType":"",
+	  "ID":"",
+	  "TagName":"",
+	  "TagValue":"",
+	  "CollectionTime":""
+      }
+  ]
+}
+查询设备变量值:
+{
+  "Command": 210,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "PageNum":0,
+  "TotalPages":0,
+  "Data":[
+    {
+      "ID":"",
+	  "TagName":"",
+	  "TagValue":"",
+	  "CollectionTime":""
+    }
+  ]
+}
+
+
+按计量表查询能源采集数据统计结果:
+{
+  "Command": 220,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "DateType":,(0:时，1:日，2:月，3:年)
+  "Data":[
+	{
+		"DateTime":"",
+		"UseValue":,
+		"ConsumeValue":
+	}
+  ]
+}
+查询变量值:
+{
+  "Command": 230,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "PageNum":0,
+  "TotalPages":0,
+  "Data":[
+    {
+      "ID":"",
+	  "TagName":"",
+	  "TagValue":"",
+	  "CollectionTime":""
+    }
+  ]
+}
+
+查询子系统信息：
+{
+  "Command": 240,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"SubsystemID":"",
+	"SubsystemName":""
+	}
+  ]
+}
+查询设备信息：
+{
+  "Command": 250,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "SysID":"",
+  "Data":[
+	{
+	"DeviceID":"",
+	"DeviceName":""
+	}
+  ]
+}
+查询点表信息
+{
+  "Command": 260,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "DeviceID":"",
+  "Data":[
+	{
+	"TagID":"",
+	"TagName":""
+	}
+  ]
+}
+历史报警
+{
+  "Command": 17,
+  "Session_value": "A6B520ED",
+  "StatusCode": 0,
+  "PageNum":0,
+  "TotalPages":0,
+  "Alarm": [
+    {
+      "ID": {
+        "SubsystemID": 1,
+        "DeviceID": 1,
+        "TagID": 1
+      },
+      "Time": {
+        "Year": 0,
+        "Month": 0,
+        "Day": 0,
+        "Hour": 0,
+        "Minute": 6,
+        "Second": 0,
+        "MinSec": 0
+      },
+      "AlarmID": 4014,
+      "AlarmCategory": 1000,
+	  "AlarmType":,
+	  "AlarmPriority": 1,
+	  "AlarmSource":"",
+	  "AlarmValue": "",
+      "AlarmMessage": "",//描述
+	  "AlarmLimit":"",
+      "AlarmACK": true
+    }
+  ]
+}
+历史事件
+{
+  "Command": 16,
+  "Session_value": "A6B520ED ",
+  "StatusCode": 0,
+  "PageNum":0,
+  "TotalPages":0,
+  "Event": [
+    {
+      "Time": {
+        "Year": 0,
+        "Month": 0,
+        "Day": 0,
+        "Hour": 0,
+        "Minute": 6,
+        "Second": 0,
+        "MinSec": 0
+      },
+"EventID": 0,
+      "UserName": "",
+      "Record": "",
+      "AccessLevel": 300,
+      "Type": 1,
+"Source":""
+    }
+  ]
+}
+系统数
+{
+  "Command": 270,
+  "Session_value": "A6B520ED ",
+  "StatusCode": 0,
+  "SystemNum":100,
+  "Data":[
+	{
+	"SystemID":"",
+	"DeviceNum":5,
+	"TagNum":4,
+	}
+  ]
+}
+
+报警数
+{
+  "Command": 271,
+  "Session_value": "A6B520ED ",
+  "StatusCode": 0,
+  "Data":[
+	{
+	"SystemID":"",
+	"AlarmNum":4,
+	}
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

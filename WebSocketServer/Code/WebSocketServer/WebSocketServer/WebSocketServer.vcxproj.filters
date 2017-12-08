@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{e58bc693-0a15-4200-8746-08586d3738bd}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="slnCommon">
+      <UniqueIdentifier>{3c7f485b-bf98-483b-bcd8-0fa1ff0cffdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnComponent">
+      <UniqueIdentifier>{91e5ddd2-3aa8-4c44-95de-9f80364bb197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnComponent\Dump">
+      <UniqueIdentifier>{fe34bed5-90dc-4641-a025-f328ee8142fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnOpenSource">
+      <UniqueIdentifier>{7d85d711-169b-46d3-a3df-c52d21a0c07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnOpenSource\JsonCpp">
+      <UniqueIdentifier>{2e8e27c0-3959-4a6c-8fa4-fc4cdfeb445a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnOpenSource\OTL">
+      <UniqueIdentifier>{01fda35e-3e1b-4e6d-bc7e-ccbe59d6ee88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnCommon\DatabaseManager">
+      <UniqueIdentifier>{ee94a9ac-717c-4615-8b79-4746cf6ca585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnCommon\NetPackage">
+      <UniqueIdentifier>{6d906e6c-cb6c-49c8-bd2e-25f2ad655a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnComponent\FileVersion">
+      <UniqueIdentifier>{f31bab11-f7d7-4d40-a65d-0c3bf4c13b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="slnCommon\Config">
+      <UniqueIdentifier>{6a171019-55ea-489e-9c10-ffd70177ce56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WebSocketServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WebSocketServer_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RDBSInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Console.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Parameter.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Session.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SessionManager.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UnitConvert.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DataCache.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\PushDataCache.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\WebSocketHandler.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\PushThread.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Optimize.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OpenSource\JsonCpp\Src\jsoncpp.cpp">
+      <Filter>slnOpenSource\JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\AlarmAssistantTable.cpp">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\DatabaseManager.cpp">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\AlarmAssistantPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\AlarmPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\EventPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\LoginPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\NetPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\PackageBase.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\TagPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Logger.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\TableBase.cpp">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\ChangeShiftsTable.cpp">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\ChgShiftsPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Component\FileVersion\FileVersion.cpp">
+      <Filter>slnComponent\FileVersion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommonUnit.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Config\CameraConfig.cpp">
+      <Filter>slnCommon\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Config\WSServerConfig.cpp">
+      <Filter>slnCommon\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CameraOperate.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\CheckStatusPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\DatabaseReportForms.cpp">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\WSServerPipe.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DatabaseManager\BMSInfoManager.cpp">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\BMSInfoPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BasicInformation.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CameraScreenshot.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\CameraControlPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommonTool.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ForbidMultiProcess.cpp">
+      <Filter>slnCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\LinkagePackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\NetPackage\TimetableDispatchPackage.cpp">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Config\Config.cpp">
+      <Filter>slnCommon\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WebSocketServer_i.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_IRDBSInterfaceEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RDBSInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Console.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Define.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Parameter.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Session.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SessionManager.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UnitConvert.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Component\Dump\MiniDump.h">
+      <Filter>slnComponent\Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataCache.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\PushDataCache.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\WebSocketHandler.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\PushThread.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Optimize.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenSource\JsonCpp\Include\json\json.h">
+      <Filter>slnOpenSource\JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenSource\JsonCpp\Include\json\json-forwards.h">
+      <Filter>slnOpenSource\JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenSource\OTL\otlv4.h">
+      <Filter>slnOpenSource\OTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\AlarmAssistantTable.h">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\DatabaseManager.h">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\AlarmAssistantPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\AlarmPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\EventPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\LoginPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\NetPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\PackageBase.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\TagPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Logger.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\TableBase.h">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\ChangeShiftsTable.h">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\ChgShiftsPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Component\FileVersion\FileVersion.h">
+      <Filter>slnComponent\FileVersion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonUnit.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Config\CameraConfig.h">
+      <Filter>slnCommon\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Config\WSServerConfig.h">
+      <Filter>slnCommon\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CameraOperate.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\CheckStatusPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Singleton.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\DatabaseReportForms.h">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\WSServerPipe.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DatabaseManager\BMSInfoManager.h">
+      <Filter>slnCommon\DatabaseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\BMSInfoPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BasicInformation.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CameraScreenshot.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\CameraControlPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonTool.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ForbidMultiProcess.h">
+      <Filter>slnCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\LinkagePackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\NetPackage\TimetableDispatchPackage.h">
+      <Filter>slnCommon\NetPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Config\Config.h">
+      <Filter>slnCommon\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WebSocketServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebSocketServer.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="RDBSInterface.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="WebSocketServer.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="WebSocketServer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

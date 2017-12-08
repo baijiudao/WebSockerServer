@@ -1,0 +1,43 @@
+// WebSocketServer.idl : IDL source for WebSocketServer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WebSocketServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(E99F4401-1E5F-44AC-85FC-9DA3E017AF4B),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IRDBSInterface : IDispatch{
+};
+[
+	uuid(75D83472-D4C4-440D-826F-6705C78F3EE5),
+	version(1.0),
+]
+library WebSocketServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(D6FE25CB-08C1-41C5-A70C-C926B9CFB06E)		
+	]
+	dispinterface _IRDBSInterfaceEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(23CE38BC-F7B7-42B1-8B37-EAEA7AA94DA9)		
+	]
+	coclass RDBSInterface
+	{
+		[default] interface IRDBSInterface;
+		[default, source] dispinterface _IRDBSInterfaceEvents;
+	};
+};
+

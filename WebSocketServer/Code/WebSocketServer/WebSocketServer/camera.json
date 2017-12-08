@@ -1,0 +1,1 @@
+{"Camera":[{"Id":111,"URL":"rtsp://admin:Hikvision@192.168.100.64:554/h264/ch1/main/av_stream","InputPort":9999,"OutputPort":9998,"VideoWidth":200,"VideoHeight":200}]}
